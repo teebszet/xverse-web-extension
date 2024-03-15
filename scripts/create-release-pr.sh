@@ -26,7 +26,7 @@ TITLE="release: $TAG"
 
 git checkout -B $BRANCH
 git commit -am "$TITLE"
-git merge origin/main -s ours
+git merge origin/main --allow-unrelated-histories -s ours
 
 git push --set-upstream origin $BRANCH
 
